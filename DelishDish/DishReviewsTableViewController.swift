@@ -43,6 +43,8 @@ class DishReviewsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DishReviewTableViewCell
 
         let blackStar = "\u{2605}"
@@ -57,12 +59,26 @@ class DishReviewsTableViewController: UITableViewController {
         if let picture = self.picture {
         cell.dishImage.image = UIImage(named: picture)
         }
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath) as! DishReviewTableViewCell
+            
+            let blackStar = "\u{2605}"
+            cell.starsLabel?.text = blackStar + blackStar + blackStar + blackStar
+            
+            cell.starsLabel?.textColor = UIColor.yellow
+            
+            if let dishName = self.dishName {
+                cell.dishNameLabel?.text = dishName
+            }
+            
+            if let picture = self.picture {
+                cell.dishImage.image = UIImage(named: picture)
+            }
+            return cell
+        }
         
-        
-        
- 
-
-        return cell
     }
 
 

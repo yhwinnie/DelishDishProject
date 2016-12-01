@@ -37,10 +37,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="7Tk-uU-NTs" customClass="RestaurantMenuTableViewCell" customModule="DelishDish" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Tk-uU-NTs" id="BNn-Ug-Ptb">
-                                    <frame key="frameInset" width="342" height="100"/>
+                                    <frame key="frameInset" width="342" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-pO-Bqp">
@@ -106,13 +106,6 @@
                                     <frame key="frameInset" width="375" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-mk-VVC">
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="98" id="Pfe-nw-Rkl"/>
-                                                <constraint firstAttribute="width" constant="90" id="ZKV-xa-OBP"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="loD-Qm-z1V"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ham and Cheese Croissant All Day Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqL-NN-Iq6">
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
                                             <nil key="textColor"/>
@@ -123,33 +116,89 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The best dish ever. Cheese is on point!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmY-gQ-ZxT">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The best dish ever. I love the wasabi!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmY-gQ-ZxT">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-mk-VVC">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="87" id="6MF-gp-ibG"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="YmY-gQ-ZxT" secondAttribute="bottom" constant="14" id="7Kl-hp-zM1"/>
-                                        <constraint firstItem="o7B-eM-93t" firstAttribute="top" secondItem="YmY-gQ-ZxT" secondAttribute="bottom" constant="-2" id="HMU-pW-0NZ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="pyW-mk-VVC" secondAttribute="bottom" constant="9" id="HSH-fK-u6K"/>
-                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="trailing" secondItem="JNp-hP-Sad" secondAttribute="trailingMargin" id="Ovd-UO-aue"/>
-                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="leading" secondItem="pyW-mk-VVC" secondAttribute="trailing" constant="12" id="Uat-hx-ppe"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="o7B-eM-93t" secondAttribute="trailing" constant="44" id="bBl-Hb-tf9"/>
-                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="leading" secondItem="o7B-eM-93t" secondAttribute="leading" id="eNR-ey-OVi"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="YmY-gQ-ZxT" secondAttribute="trailing" constant="21" id="kMq-6d-S24"/>
-                                        <constraint firstItem="pyW-mk-VVC" firstAttribute="top" secondItem="JNp-hP-Sad" secondAttribute="topMargin" constant="-4" id="ocA-dw-PfS"/>
-                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="top" secondItem="JNp-hP-Sad" secondAttribute="topMargin" id="pay-l4-w6f"/>
-                                        <constraint firstItem="YmY-gQ-ZxT" firstAttribute="top" secondItem="yqL-NN-Iq6" secondAttribute="bottom" constant="-1" id="ske-RY-8um"/>
-                                        <constraint firstItem="YmY-gQ-ZxT" firstAttribute="leading" secondItem="pyW-mk-VVC" secondAttribute="trailing" constant="8" symbolic="YES" id="wXN-rT-qRE"/>
-                                        <constraint firstItem="pyW-mk-VVC" firstAttribute="leading" secondItem="JNp-hP-Sad" secondAttribute="leadingMargin" id="yoQ-rV-PCH"/>
+                                        <constraint firstItem="o7B-eM-93t" firstAttribute="top" secondItem="YmY-gQ-ZxT" secondAttribute="bottom" constant="12" id="6U7-OF-qqZ"/>
+                                        <constraint firstItem="pyW-mk-VVC" firstAttribute="leading" secondItem="JNp-hP-Sad" secondAttribute="leadingMargin" id="76H-YZ-VGB"/>
+                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="leading" secondItem="YmY-gQ-ZxT" secondAttribute="leading" id="7dF-oI-qa8"/>
+                                        <constraint firstItem="o7B-eM-93t" firstAttribute="top" secondItem="yqL-NN-Iq6" secondAttribute="bottom" constant="47" id="7fB-aq-D8w"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yqL-NN-Iq6" secondAttribute="trailing" constant="4" id="E2O-62-7Iw"/>
+                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="top" secondItem="JNp-hP-Sad" secondAttribute="top" id="EnU-dz-38z"/>
+                                        <constraint firstItem="pyW-mk-VVC" firstAttribute="centerY" secondItem="YmY-gQ-ZxT" secondAttribute="centerY" id="JaZ-P0-qDy"/>
+                                        <constraint firstItem="yqL-NN-Iq6" firstAttribute="leading" secondItem="pyW-mk-VVC" secondAttribute="trailing" constant="8" symbolic="YES" id="Jbw-6W-WPW"/>
+                                        <constraint firstItem="o7B-eM-93t" firstAttribute="bottom" secondItem="JNp-hP-Sad" secondAttribute="bottomMargin" id="NKg-Hm-ln3"/>
+                                        <constraint firstItem="YmY-gQ-ZxT" firstAttribute="leading" secondItem="o7B-eM-93t" secondAttribute="leading" id="UKs-Ap-hLr"/>
+                                        <constraint firstItem="pyW-mk-VVC" firstAttribute="top" secondItem="JNp-hP-Sad" secondAttribute="topMargin" constant="4" id="YEw-Uc-Row"/>
+                                        <constraint firstItem="YmY-gQ-ZxT" firstAttribute="top" secondItem="JNp-hP-Sad" secondAttribute="topMargin" constant="34" id="YuD-LH-Dd3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YmY-gQ-ZxT" secondAttribute="trailing" constant="-6" id="uMZ-yL-cN7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dishImage" destination="pyW-mk-VVC" id="rLd-U3-mh4"/>
                                     <outlet property="dishNameLabel" destination="yqL-NN-Iq6" id="yIB-RL-lv6"/>
                                     <outlet property="starsLabel" destination="o7B-eM-93t" id="6RW-P8-mS7"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="120" id="7Nb-YW-Ax4" customClass="DishReviewTableViewCell" customModule="DelishDish" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="148" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Nb-YW-Ax4" id="0oP-JI-uxW">
+                                    <frame key="frameInset" width="375" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ham and Cheese Croissant All Day Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-ee-nYS">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFb-sz-QAG">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The salmon is fresh! " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-ia-Fh6">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oRE-6u-G0J">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="87" id="E6K-Bs-nOq"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lM3-ee-nYS" firstAttribute="top" secondItem="0oP-JI-uxW" secondAttribute="top" id="67P-3J-hRZ"/>
+                                        <constraint firstItem="oRE-6u-G0J" firstAttribute="leading" secondItem="0oP-JI-uxW" secondAttribute="leadingMargin" id="6B0-Aj-KWj"/>
+                                        <constraint firstItem="lM3-ee-nYS" firstAttribute="leading" secondItem="oRE-6u-G0J" secondAttribute="trailing" constant="8" symbolic="YES" id="9l4-it-BsF"/>
+                                        <constraint firstItem="FFb-sz-QAG" firstAttribute="bottom" secondItem="0oP-JI-uxW" secondAttribute="bottomMargin" id="JwS-bk-9vM"/>
+                                        <constraint firstItem="oRE-6u-G0J" firstAttribute="top" secondItem="0oP-JI-uxW" secondAttribute="topMargin" constant="4" id="LYF-U9-ILF"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lM3-ee-nYS" secondAttribute="trailing" constant="4" id="LrX-ZV-aqR"/>
+                                        <constraint firstItem="FFb-sz-QAG" firstAttribute="top" secondItem="lM3-ee-nYS" secondAttribute="bottom" constant="47" id="M3R-Zv-wND"/>
+                                        <constraint firstItem="lM3-ee-nYS" firstAttribute="leading" secondItem="5fI-ia-Fh6" secondAttribute="leading" id="OzH-s1-mkY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5fI-ia-Fh6" secondAttribute="trailing" constant="-6" id="WKg-AN-DkJ"/>
+                                        <constraint firstItem="FFb-sz-QAG" firstAttribute="top" secondItem="5fI-ia-Fh6" secondAttribute="bottom" constant="12" id="WRJ-vM-hdx"/>
+                                        <constraint firstItem="5fI-ia-Fh6" firstAttribute="leading" secondItem="FFb-sz-QAG" secondAttribute="leading" id="hUR-qZ-swP"/>
+                                        <constraint firstItem="oRE-6u-G0J" firstAttribute="centerY" secondItem="5fI-ia-Fh6" secondAttribute="centerY" id="ygW-Zo-r7J"/>
+                                        <constraint firstItem="5fI-ia-Fh6" firstAttribute="top" secondItem="0oP-JI-uxW" secondAttribute="topMargin" constant="34" id="yty-Ru-EG8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dishImage" destination="oRE-6u-G0J" id="3qu-fB-0fT"/>
+                                    <outlet property="dishNameLabel" destination="lM3-ee-nYS" id="woJ-V0-l8H"/>
+                                    <outlet property="starsLabel" destination="FFb-sz-QAG" id="UAB-5a-Fzp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -161,7 +210,7 @@
                     <navigationItem key="navigationItem" title="Reviews" id="dRK-x2-SqY">
                         <barButtonItem key="rightBarButtonItem" title="Add Reviews" id="rP3-zB-Yfu">
                             <connections>
-                                <segue destination="Q29-7w-6Qa" kind="show" id="PvS-Fe-hrU"/>
+                                <segue destination="Q29-7w-6Qa" kind="show" id="etd-Bl-4nx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -182,48 +231,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot Filled-100-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ynT-wa-1pI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="BgG-MX-F3T"/>
+                                    <constraint firstAttribute="height" constant="128" id="v8h-17-IoK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-ta-M5G">
+                                <state key="normal" title="Add a picture, it's mandatory!">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPictureAction:" destination="Q29-7w-6Qa" eventType="touchUpInside" id="oE8-d4-6wq"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-Gs-xnl">
                                 <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="bUV-to-V0y"/>
+                                    <constraint firstAttribute="width" constant="71" id="0ua-bz-jp5"/>
                                 </constraints>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3Kf-vL-eMc" kind="show" id="26A-MA-Kg3"/>
+                                    <segue destination="3Kf-vL-eMc" kind="show" id="2Hf-OW-W5Z"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell us about the dish" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ybs-8n-SuP">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="78b-d0-xwb"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LDp-1d-fVt" firstAttribute="top" secondItem="ELw-Gs-xnl" secondAttribute="bottom" constant="286" id="2OK-Vn-jcf"/>
-                            <constraint firstItem="ybs-8n-SuP" firstAttribute="leading" secondItem="lKG-lC-8GA" secondAttribute="leadingMargin" constant="54" id="FWj-eW-aQa"/>
-                            <constraint firstItem="ybs-8n-SuP" firstAttribute="centerX" secondItem="ELw-Gs-xnl" secondAttribute="centerX" id="KAB-bx-S8U"/>
-                            <constraint firstItem="ELw-Gs-xnl" firstAttribute="top" secondItem="ybs-8n-SuP" secondAttribute="bottom" constant="31" id="chY-Tn-NfF"/>
-                            <constraint firstItem="ybs-8n-SuP" firstAttribute="top" secondItem="aKF-ig-nGn" secondAttribute="bottom" constant="125" id="sLV-NI-l8r"/>
-                            <constraint firstItem="ybs-8n-SuP" firstAttribute="centerX" secondItem="lKG-lC-8GA" secondAttribute="centerX" id="zIn-Jd-LUd"/>
+                            <constraint firstItem="ELw-Gs-xnl" firstAttribute="top" secondItem="ybs-8n-SuP" secondAttribute="bottom" constant="20" id="2Px-MW-LQQ"/>
+                            <constraint firstItem="Rca-ta-M5G" firstAttribute="top" secondItem="ynT-wa-1pI" secondAttribute="bottom" constant="1" id="A4X-Wl-nmW"/>
+                            <constraint firstItem="ybs-8n-SuP" firstAttribute="leading" secondItem="lKG-lC-8GA" secondAttribute="leadingMargin" constant="55" id="OG6-zh-DaM"/>
+                            <constraint firstItem="Rca-ta-M5G" firstAttribute="centerX" secondItem="ybs-8n-SuP" secondAttribute="centerX" id="YeR-Kf-6sh"/>
+                            <constraint firstItem="ynT-wa-1pI" firstAttribute="centerX" secondItem="Rca-ta-M5G" secondAttribute="centerX" id="cSe-fY-11h"/>
+                            <constraint firstItem="LDp-1d-fVt" firstAttribute="top" secondItem="ELw-Gs-xnl" secondAttribute="bottom" constant="69" id="cw0-M4-nGP"/>
+                            <constraint firstItem="ynT-wa-1pI" firstAttribute="centerX" secondItem="lKG-lC-8GA" secondAttribute="centerX" id="dom-YG-kdI"/>
+                            <constraint firstItem="Rca-ta-M5G" firstAttribute="centerX" secondItem="ELw-Gs-xnl" secondAttribute="centerX" id="gpy-UP-JqS"/>
+                            <constraint firstItem="ynT-wa-1pI" firstAttribute="top" secondItem="aKF-ig-nGn" secondAttribute="bottom" constant="90" id="vbh-sn-smx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Write a Review" id="GeR-0P-0pa"/>
+                    <navigationItem key="navigationItem" title="Write a Review" id="GeR-0P-0pa">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="kST-df-eq2">
+                            <connections>
+                                <segue destination="2mT-au-dQZ" kind="show" id="imQ-ch-ECW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="foodImage" destination="ynT-wa-1pI" id="4c0-0U-RjD"/>
                         <outlet property="reviewTextView" destination="ybs-8n-SuP" id="TOb-j8-hm8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFz-IX-LM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952.8" y="-600.44977511244383"/>
+            <point key="canvasLocation" x="2104.8000000000002" y="-600.44977511244383"/>
         </scene>
         <!--Restaurants-->
         <scene sceneID="wh9-7I-dGG">
             <objects>
                 <collectionViewController id="2mT-au-dQZ" customClass="DishesCollectionViewController" customModule="DelishDish" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g5D-Ie-d2n">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="g5D-Ie-d2n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -280,11 +357,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screenshot Filled-100-2.png" width="100" height="100"/>
         <image name="cheese.jpg" width="680" height="1020"/>
         <image name="ham.jpg" width="640" height="252"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="26A-MA-Kg3"/>
+        <segue reference="2Hf-OW-W5Z"/>
+        <segue reference="imQ-ch-ECW"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

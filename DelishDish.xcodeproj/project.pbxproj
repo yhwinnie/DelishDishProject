@@ -48,6 +48,7 @@
 		4CC4949B1DC0176C0052C073 /* somo_crunch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CC494991DC0176C0052C073 /* somo_crunch.jpg */; };
 		4CC4949C1DC0176C0052C073 /* salmonsamba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4949A1DC0176C0052C073 /* salmonsamba.jpg */; };
 		4CC4949E1DC017DD0052C073 /* caballero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4949D1DC017DD0052C073 /* caballero.jpg */; };
+		4CC5D1A91DC9460C002F4FBD /* Screenshot Filled-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5D1A81DC9460C002F4FBD /* Screenshot Filled-100-2.png */; };
 		4CDA5CE71DB6C08000536FF9 /* RestaurantMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA5CE61DB6C08000536FF9 /* RestaurantMenuTableViewController.swift */; };
 		4CDA5CE91DB6C0EC00536FF9 /* DishesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA5CE81DB6C0EC00536FF9 /* DishesCollectionViewController.swift */; };
 		4CEEB14A1DBA70A900E4FC30 /* ProjectJuiceMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEB1491DBA70A900E4FC30 /* ProjectJuiceMenu.swift */; };
@@ -101,6 +102,7 @@
 		4CC494991DC0176C0052C073 /* somo_crunch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = somo_crunch.jpg; sourceTree = "<group>"; };
 		4CC4949A1DC0176C0052C073 /* salmonsamba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmonsamba.jpg; sourceTree = "<group>"; };
 		4CC4949D1DC017DD0052C073 /* caballero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caballero.jpg; sourceTree = "<group>"; };
+		4CC5D1A81DC9460C002F4FBD /* Screenshot Filled-100-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot Filled-100-2.png"; sourceTree = "<group>"; };
 		4CDA5CE61DB6C08000536FF9 /* RestaurantMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantMenuTableViewController.swift; sourceTree = "<group>"; };
 		4CDA5CE81DB6C0EC00536FF9 /* DishesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewController.swift; sourceTree = "<group>"; };
 		4CEEB1491DBA70A900E4FC30 /* ProjectJuiceMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectJuiceMenu.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				4CEEB1501DBA764200E4FC30 /* Models */,
 				4CF600CD1DAC83B8001963C2 /* AppDelegate.swift */,
 				4CF600D11DAC83B8001963C2 /* Main.storyboard */,
+				4CC5D1A81DC9460C002F4FBD /* Screenshot Filled-100-2.png */,
 				4C8AFF161DC7C33C00480AD9 /* grandmas_pictures */,
 				4C8AFF151DC7C32E00480AD9 /* zoah_pictures */,
 				4C8AFF141DC7C31800480AD9 /* Project_juice_pictures */,
@@ -349,6 +352,7 @@
 				4C8AFF0E1DC7C0DB00480AD9 /* bonsai.jpg in Resources */,
 				4C8AFF0A1DC7BF8800480AD9 /* mayan.jpg in Resources */,
 				4C8AFF321DC7CDBC00480AD9 /* avocadotoast.jpg in Resources */,
+				4CC5D1A91DC9460C002F4FBD /* Screenshot Filled-100-2.png in Resources */,
 				4CC494961DC015E80052C073 /* satori.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
